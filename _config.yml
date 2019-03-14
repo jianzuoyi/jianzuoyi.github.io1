@@ -1,0 +1,52 @@
+encoding: UTF-8
+
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+highlighter: rouge
+# pygments: true
+
+# 作者信息
+author: 
+  name: 简基
+  email: xmusaber@163.com
+  link: http://jianzuoyi.github.io/
+  weibo: http://weibo.com/u/jianzuoyi
+  github: https://github.com/jianzuoyi
+  github_username:  jianzuoyi
+  github_page: jianzuoyi.github.io
+  weibo_username:  jianzuoyi
+
+# 站点信息
+title: 简基
+description: 
+ If,<br/>for example,<br/>you come at four o'clock in the afternoon,<br/>then at three o'clock I shall begin to be happy.
+rss_url: /feed.xml
+
+# gavatar头像及Favicon
+gavatar : /assets/img/saber.jpg
+favicon : /assets/img/favicon.ico
+
+# disqus 设置
+#disqus:
+#  shortname: blademastercoder
+
+#profile 个人信息
+
+profile_desc : 技术<br>生活<br>和爱情<br>记录点滴 珍藏回忆<br>
+
+# 首页除了最新文章外显示分类
+cates: 
+- Essay
+# - Python
+# - OpenStack
+
+# 中文本地化
+locals: 
+   newest : 最新文章
+
+theme: jekyll-theme-leap-day
