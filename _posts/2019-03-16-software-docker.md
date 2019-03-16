@@ -1,8 +1,8 @@
 ---
-layout:post
-title:【software】docker安装以及常见问题处理方法
-tags：软件
-category：软件
+layout: post
+title: 【software】docker安装以及常见问题处理方法
+tags: 软件
+category:软件
 ---
 
 ### 在centos平台的安装方法
