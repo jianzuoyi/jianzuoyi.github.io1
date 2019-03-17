@@ -6,7 +6,7 @@ category: 软件
 date: 2019-03-16 11:00:00
 ---
 
-### 在centos平台的安装方法
+**centos平台安装**
 
 ```
 # uninstall
@@ -24,10 +24,10 @@ sudo usermod -aG  docker $USER
 cat /etc/group | grep ^docker
 
 # 为docker寻找较大的存储空间
-# 1： 先停止docker服务
+# 1： 停止docker服务
 sudo service docker stop
 # 2： 移动目录位置
-sudo mv docker /path/to/large/disk/docker
+sudo mv /var/lib/docker /path/to/large/disk/docker
 # 3： 创建软链接
 sudo ln -s /path/to/large/disk/docker /var/lib/docker
 
@@ -43,4 +43,40 @@ exit
 ssh username@ip
 ```
 
+**ubuntu平台安装**
+
+```
+# unintall
+sudo service docker stop
+sudo apt-get remove docker docker-ce docker.io
+
+# install
+apt-get install docker-ce
+
+# 其他操作见centos平台安装方法
+
+```
+
+**docker的常见使用方法**
+```
+# 进入docker
+docker run -it helloworld:v1.0
+
+# 进入docker的同时挂载外部目录
+docker run -it -v /data:/data helloworld:v1.0
+
+# docker run 常用参数
+--rm
+
+# 查看镜像
+docker images
+
+# 查看运行中的镜像
+docker ps -a
+```
+
+# Dockerfile例子
+```
+pass
+```
 <center>-END-</center>
