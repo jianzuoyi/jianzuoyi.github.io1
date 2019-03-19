@@ -19,9 +19,11 @@ grep BRCA1 brcaPanel.avinput.annovar.hg19_multianno.txt | cut -f 1-3,6,10 | cut 
 ```
 
 ## 检查覆盖度
+```
 samtools bedcov BRCA2_anno.bed test.final.bam | awk '{print $1,$2,$3,$4,$5,$6/($3-$2+1)}' | cut -f 1 -d '.' > BRCA2.exon.cov.txt
 
 samtools bedcov BRCA1_anno.bed test.final.bam | awk '{print $1,$2,$3,$4,$5,$6/($3-$2+1)}' | cut -f 1 -d '.' > BRCA1.exon.cov.txt
+```
 
 ### 代码:anno_refgene.sh
 ```
